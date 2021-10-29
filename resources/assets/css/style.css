@@ -1,0 +1,9 @@
+.ui-dialog-titlebar {
+    background-color: #FFAA;
+    font-family: system-ui, -apple-system, "Segoe UI";
+    border-radius: 0;
+}
+
+.ui-dialog-titlebar-close {
+    background-color: #f8f9fa;
+}

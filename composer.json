@@ -1,0 +1,9 @@
+{
+    "name": "vsms/vsms",
+    "description": "Vehicle Sales Management System",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
