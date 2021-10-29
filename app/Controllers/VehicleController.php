@@ -97,6 +97,6 @@ class VehicleController
     {
         (new Vehicle())->deleteById($id);
 
-        echo '<p class="text-center">Veículo removido com sucesso.</p>';
+        echo json_encode('<p class="text-center">Veículo removido com sucesso.</p>');
     }
 }

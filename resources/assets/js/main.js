@@ -140,9 +140,8 @@ $(document).ready(function() {
         resizable: false,
         buttons: {
             Sim: function() {
-                var id = $(this).attr('id');
-                console.log(id);
-
+                var id = $(this).data('id');
+                
                 $.ajax({
                     url: '../../../handler/vehicle_handler.php',
                     type: 'POST',
@@ -157,15 +156,14 @@ $(document).ready(function() {
                 });
             },
             Não: function() {
-                $(this).css('background', 'bg-danger');
                 $(this).dialog('close');
+                console.log($('#delete_confirmation'));
             }
         }
     });
 
     $(document).on('click', '.delete', function() {
         var id = $(this).attr('id');
-        console.log(id);
         $('#delete_confirmation').data('id', id).dialog('open');
     });
 
